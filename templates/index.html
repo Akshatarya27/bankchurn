@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+</head>
+<body>
+    <h1>Customer Churn Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="country">Country:</label>
+        <select name="country" id="country" required>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="Germany">Germany</option>
+        </select><br>
+
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" min="18" max="100" value="30" required><br>
+
+        <label for="products_number">Number of Products:</label>
+        <input type="number" name="products_number" min="1" max="10" value="2" required><br>
+
+        <label for="tenure">Tenure:</label>
+        <input type="number" name="tenure" min="0" max="100" value="5" required><br>
+
+        <label for="balance">Balance:</label>
+        <input type="number" name="balance" step="0.01" min="0" max="1000000" value="10000" required><br>
+
+        <label for="credit_card">Has Credit Card:</label>
+        <select name="credit_card" id="credit_card" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="active_member">Is Active Member:</label>
+        <select name="active_member" id="active_member" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="estimated_salary">Estimated Salary:</label>
+        <input type="number" name="estimated_salary" step="0.01" min="0" max="1000000" value="50000" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
